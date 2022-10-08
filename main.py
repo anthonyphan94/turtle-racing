@@ -50,8 +50,8 @@ while is_race_on:
 
         random_distance = random.randint(0, 10)
         each_turtle.forward(random_distance)
-
-        print(each_turtle.xcor())
+        turtle_color = each_turtle.color()[0]
+        print(f"turtle {turtle_color} at position {each_turtle.xcor()}")
         if each_turtle.xcor() > 350:
             is_race_on = False
             win_color = each_turtle.color()[0]
